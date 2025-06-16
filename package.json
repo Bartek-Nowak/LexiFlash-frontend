@@ -5,12 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prepare": "husky install",
     "json-server": "json-server --watch data/db.json --port 8000",
     "dev:all": "concurrently \"npm run dev\" \"npm run json-server\"",
     "lint": "eslint --ext .js,.ts,.vue src",
     "lint:fix": "eslint --fix --ext .js,.ts,.vue src",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
@@ -28,7 +35,9 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
     "eslint-plugin-vue": "^10.2.0",
+    "husky": "^9.1.7",
     "json-server": "^1.0.0-beta.3",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.5.3",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
