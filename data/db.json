@@ -1,0 +1,31 @@
+{
+  "flashcards": [
+    {
+      "id": 1,
+      "front": "apple",
+      "back": "jabłko",
+      "example": "I eat an apple every day.",
+      "category": "food",
+      "difficulty": "easy",
+      "notes": "Common fruit, also used metaphorically"
+    },
+    {
+      "id": 2,
+      "front": "run",
+      "back": "biegać",
+      "example": "She likes to run in the mornings.",
+      "category": "verbs",
+      "difficulty": "medium",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "front": "computer",
+      "back": "komputer",
+      "example": "This computer is very fast.",
+      "category": "technology",
+      "difficulty": "easy",
+      "notes": ""
+    }
+  ]
+}
