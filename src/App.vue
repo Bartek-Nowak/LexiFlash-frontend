@@ -1,6 +1,6 @@
 <template>
-  <FlashCard />
+  <DeckView />
 </template>
 <script setup lang="ts">
-import FlashCard from "@/components/FlashCard.vue"
+import DeckView from '@/views/DeckView.vue';
 </script>
