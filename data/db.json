@@ -1,31 +1,108 @@
 {
   "flashcards": [
     {
-      "id": 1,
-      "front": "apple",
-      "back": "jabłko",
-      "example": "I eat an apple every day.",
-      "category": "food",
-      "difficulty": "easy",
-      "notes": "Common fruit, also used metaphorically"
+      "id": "1",
+      "question": {
+        "text": "apple"
+      },
+      "answer": {
+        "text": "jabłko"
+      }
     },
     {
-      "id": 2,
-      "front": "run",
-      "back": "biegać",
-      "example": "She likes to run in the mornings.",
-      "category": "verbs",
-      "difficulty": "medium",
-      "notes": ""
+      "id": "2",
+      "question": {
+        "text": "run"
+      },
+      "answer": {
+        "text": "biegać"
+      }
     },
     {
-      "id": 3,
-      "front": "computer",
-      "back": "komputer",
-      "example": "This computer is very fast.",
-      "category": "technology",
-      "difficulty": "easy",
-      "notes": ""
+      "id": "3",
+      "question": {
+        "text": "computer"
+      },
+      "answer": {
+        "text": "komputer"
+      }
+    },
+    {
+      "id": "4",
+      "question": {
+        "text": "sun"
+      },
+      "answer": {
+        "text": "słońce"
+      }
+    },
+    {
+      "id": "5",
+      "question": {
+        "text": "to read"
+      },
+      "answer": {
+        "text": "czytać"
+      }
+    },
+    {
+      "id": "6",
+      "question": {
+        "text": "tree"
+      },
+      "answer": {
+        "text": "drzewo"
+      }
+    },
+    {
+      "id": "7",
+      "question": {
+        "text": "water"
+      },
+      "answer": {
+        "text": "woda"
+      }
+    },
+    {
+      "id": "8",
+      "question": {
+        "text": "to write"
+      },
+      "answer": {
+        "text": "pisać"
+      }
+    },
+    {
+      "id": "9",
+      "question": {
+        "text": "book"
+      },
+      "answer": {
+        "text": "książka"
+      }
+    },
+    {
+      "id": "10",
+      "question": {
+        "text": "to sleep"
+      },
+      "answer": {
+        "text": "spać"
+      }
+    }
+  ],
+  "translations": [
+    {
+      "id": "en",
+      "hello": "Hello",
+      "next": "Next",
+      "previous": "Previous"
+    },
+    {
+      "id": "pl",
+      "hello": "Cześć",
+      "next": "Następny",
+      "previous": "Poprzedni"
     }
   ]
 }
