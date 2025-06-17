@@ -5,7 +5,7 @@
     </h1>
     <p class="mb-8 text-gray-600">{{ $t('introduction') }}</p>
     <div class="flex justify-center gap-4">
-      <Button variant="primary" @btn-click="router.push('/deck-list')">{{
+      <Button variant="primary" @btn-click="router.push('/learning')">{{
         $t('startLearning')
       }}</Button>
       <Button variant="secondary" @btn-click="router.push('/deck-manage')">{{
