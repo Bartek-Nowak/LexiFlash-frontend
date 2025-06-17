@@ -2,7 +2,10 @@ export interface FlashcardType {
   id: string;
   question: {
     text?: string;
-    imageUrl?: string;
+    image?: {
+      url: string;
+      altText?: string;
+    };
     mathLatex?: string;
   };
   answer: {

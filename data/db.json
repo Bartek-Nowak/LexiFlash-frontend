@@ -3,7 +3,13 @@
     {
       "id": "1",
       "deckId": "1",
-      "question": { "text": "apple" },
+      "question": {
+        "text": "apple",
+        "image": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
+          "alt": "A red apple"
+        }
+      },
       "answer": { "text": "jabłko" }
     },
     {
