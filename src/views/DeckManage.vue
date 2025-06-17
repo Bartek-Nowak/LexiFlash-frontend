@@ -20,7 +20,6 @@ const router = useRouter();
 onMounted(async () => {
   const res = await axios.get(`${import.meta.env.VITE_API_URL}/decks`);
   decks.value = res.data;
-  console.log(decks.value);
 });
 
 const goToDeck = (id: string) => {

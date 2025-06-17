@@ -20,7 +20,10 @@ import { computed, ref, onMounted } from 'vue';
 import axios from 'axios';
 import { Flashcard, Button } from '@/components';
 import type { FlashcardType } from '@/types';
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
+const deckId = route.params.id as string;
 const flashcards = ref<FlashcardType[]>([]);
 const page = ref(1);
 const limit = 5;
@@ -38,7 +41,7 @@ async function fetchFlashcards() {
 
     const apiUrl = import.meta.env.VITE_API_URL;
     const response = await axios.get(
-      `${apiUrl}/flashcards?_page=${page.value}&_per_page=${limit}`
+      `${apiUrl}/flashcards?deckId=${deckId}&_page=${page.value}&_per_page=${limit}`
     );
 
     if (!response.data.next) {

@@ -5,7 +5,7 @@ import { HomeView, DeckManage, DeckView, SettingsView } from '@/views';
 const routes = [
   { path: '/', name: 'home', component: HomeView },
   { path: '/deck-manage', name: 'deck-manage', component: DeckManage },
-  { path: '/deck', name: 'deck', component: DeckView },
+  { path: '/deck/:id', name: 'deck', component: DeckView, props: true },
   { path: '/settings', name: 'settings', component: SettingsView },
 ];
 
