@@ -1,5 +1,5 @@
 import axios from 'axios';
-import i18n from '@/i18n';
+import i18n from '@/plugins/i18n';
 
 export async function loadLocaleMessages(locale: string) {
   if (i18n.global.availableLocales.includes(locale)) return;

@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { loadLocaleMessages } from '@/utils/useLocaleLoader.ts';
+import { loadLocaleMessages } from '@/composables';
 
 const { locale } = useI18n();
 

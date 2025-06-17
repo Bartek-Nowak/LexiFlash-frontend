@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import App from './App.vue';
-import i18n from './i18n';
-import { loadLocaleMessages } from '@/utils/useLocaleLoader.ts';
+import i18n from './plugins/i18n';
+import { loadLocaleMessages } from '@/composables';
 
 (async () => {
   await loadLocaleMessages('pl');

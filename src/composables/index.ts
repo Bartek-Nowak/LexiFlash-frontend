@@ -1,0 +1,1 @@
+export { loadLocaleMessages } from './useLocaleLoader';
