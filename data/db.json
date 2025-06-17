@@ -95,14 +95,22 @@
     {
       "id": "en",
       "hello": "Hello",
-      "next": "Next",
-      "previous": "Previous"
+      "flashcard": {
+        "next": "Next",
+        "previous": "Previous",
+        "hideAnswer": "Hide Answer",
+        "showAnswer": "Show Answer"
+      }
     },
     {
       "id": "pl",
       "hello": "Cześć",
-      "next": "Następny",
-      "previous": "Poprzedni"
+      "flashcard": {
+        "next": "Następny",
+        "previous": "Poprzedni",
+        "hideAnswer": "Ukryj odpowiedź",
+        "showAnswer": "Pokaż odpowiedź"
+      }
     }
   ]
 }

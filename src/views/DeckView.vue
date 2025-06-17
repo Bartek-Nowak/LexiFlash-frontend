@@ -2,10 +2,10 @@
   <div>
     <Flashcard v-if="!isLoading" :flashcard="flashcards[flashcardIndex]" />
     <Button variant="primary" @btn-click="previousFlashcard">{{
-      $t('previous')
+      $t('flashcard.previous')
     }}</Button>
     <Button variant="secondary" @btn-click="nextFlashcard">{{
-      $t('next')
+      $t('flashcard.next')
     }}</Button>
   </div>
 </template>
