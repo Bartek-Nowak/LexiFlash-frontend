@@ -3,3 +3,5 @@ export { default as Button } from './Button.vue';
 export { default as LanguageSwitcher } from './LanguageSwitcher.vue';
 export { default as Navbar } from './Navbar.vue';
 export { default as PieChart } from './PieChart.vue';
+export { default as ProgressBar } from './ProgressBar.vue';
+export { default as ErrorCount } from './ErrorCount.vue';
