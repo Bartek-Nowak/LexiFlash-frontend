@@ -56,7 +56,8 @@
         "previous": "Previous",
         "hideAnswer": "Hide Answer",
         "showAnswer": "Show Answer",
-        "loading": "Loading..."
+        "loading": "Loading...",
+        "answerPlaceholder": "Type here"
       }
     },
     {
@@ -79,7 +80,8 @@
         "previous": "Poprzedni",
         "hideAnswer": "Ukryj odpowiedź",
         "showAnswer": "Pokaż odpowiedź",
-        "loading": "Ładowanie..."
+        "loading": "Ładowanie...",
+        "answerPlaceholder": "Wpisz odpowiedź"
       }
     }
   ]
