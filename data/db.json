@@ -95,21 +95,25 @@
     {
       "id": "en",
       "hello": "Hello",
+      "loading": "Loading...",
       "flashcard": {
         "next": "Next",
         "previous": "Previous",
         "hideAnswer": "Hide Answer",
-        "showAnswer": "Show Answer"
+        "showAnswer": "Show Answer",
+        "loading": "Loading..."
       }
     },
     {
       "id": "pl",
       "hello": "Cześć",
+      "loading": "Ładowanie...",
       "flashcard": {
         "next": "Następny",
         "previous": "Poprzedni",
         "hideAnswer": "Ukryj odpowiedź",
-        "showAnswer": "Pokaż odpowiedź"
+        "showAnswer": "Pokaż odpowiedź",
+        "loading": "Ładowanie..."
       }
     }
   ]
