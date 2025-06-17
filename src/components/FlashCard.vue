@@ -1,5 +1,5 @@
 <template>
-  <p>{{ front }}</p>
+  <p class="text-blue-700">{{ front }}</p>
 </template>
 <script setup lang="ts">
 defineProps<{
