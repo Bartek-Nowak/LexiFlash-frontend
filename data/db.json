@@ -38,7 +38,8 @@
         "home": "Home",
         "deckManage": "Manage Deck",
         "deck": "Deck",
-        "settings": "Settings"
+        "settings": "Settings",
+        "decklist": "Deck List"
       },
       "flashcard": {
         "next": "Next",
@@ -54,9 +55,10 @@
       "loading": "Ładowanie...",
       "pages": {
         "home": "Główna",
-        "deckManage": "Zarządzaj talią",
-        "deck": "Talia",
-        "settings": "Ustawienia"
+        "deckManage": "Zarządzaj fiszkami",
+        "deck": "Fiszki",
+        "settings": "Ustawienia",
+        "decklist": "Lista fiszek"
       },
       "flashcard": {
         "next": "Następny",

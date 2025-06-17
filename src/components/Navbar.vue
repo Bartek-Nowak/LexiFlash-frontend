@@ -9,6 +9,12 @@
         >{{ $t('pages.home') }}</router-link
       >
       <router-link
+        to="/deck-list"
+        class="text-blue-600 hover:underline"
+        active-class="font-bold underline"
+        >{{ $t('pages.decklist') }}</router-link
+      >
+      <router-link
         to="/deck-manage"
         class="text-blue-600 hover:underline"
         active-class="font-bold underline"
