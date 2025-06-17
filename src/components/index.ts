@@ -5,3 +5,4 @@ export { default as Navbar } from './Navbar.vue';
 export { default as PieChart } from './PieChart.vue';
 export { default as ProgressBar } from './ProgressBar.vue';
 export { default as ErrorCount } from './ErrorCount.vue';
+export { default as FlashcardViewer } from './FlashcardViewer.vue';

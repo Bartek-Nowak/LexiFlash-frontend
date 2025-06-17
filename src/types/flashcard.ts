@@ -9,7 +9,7 @@ export interface FlashcardType {
     mathLatex?: string;
   };
   answer: {
-    text?: string;
+    text: string;
     imageUrl?: string;
     mathLatex?: string;
   };

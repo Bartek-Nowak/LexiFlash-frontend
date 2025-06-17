@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">
+  <div>
     <div class="w-full bg-gray-300 rounded-full h-4">
       <div
         class="bg-blue-600 h-4 rounded-full transition-all duration-500"
