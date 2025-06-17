@@ -45,7 +45,8 @@
         "deckManage": "Manage Deck",
         "deck": "Deck",
         "settings": "Settings",
-        "decklist": "Deck List"
+        "decklist": "Deck List",
+        "learning": "Learning"
       },
       "flashcard": {
         "next": "Next",
@@ -64,7 +65,8 @@
         "deckManage": "Zarządzaj fiszkami",
         "deck": "Fiszki",
         "settings": "Ustawienia",
-        "decklist": "Lista fiszek"
+        "decklist": "Lista fiszek",
+        "learning": "Nauka"
       },
       "flashcard": {
         "next": "Następny",
