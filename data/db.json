@@ -2,100 +2,44 @@
   "flashcards": [
     {
       "id": "1",
-      "question": {
-        "text": "apple"
-      },
-      "answer": {
-        "text": "jabłko"
-      }
+      "deckId": "1",
+      "question": { "text": "apple" },
+      "answer": { "text": "jabłko" }
     },
     {
       "id": "2",
-      "question": {
-        "text": "run"
-      },
-      "answer": {
-        "text": "biegać"
-      }
+      "deckId": "1",
+      "question": { "text": "run" },
+      "answer": { "text": "biegać" }
     },
     {
       "id": "3",
-      "question": {
-        "text": "computer"
-      },
-      "answer": {
-        "text": "komputer"
-      }
+      "deckId": "2",
+      "question": { "text": "computer" },
+      "answer": { "text": "komputer" }
     },
     {
       "id": "4",
-      "question": {
-        "text": "sun"
-      },
-      "answer": {
-        "text": "słońce"
-      }
-    },
-    {
-      "id": "5",
-      "question": {
-        "text": "to read"
-      },
-      "answer": {
-        "text": "czytać"
-      }
-    },
-    {
-      "id": "6",
-      "question": {
-        "text": "tree"
-      },
-      "answer": {
-        "text": "drzewo"
-      }
-    },
-    {
-      "id": "7",
-      "question": {
-        "text": "water"
-      },
-      "answer": {
-        "text": "woda"
-      }
-    },
-    {
-      "id": "8",
-      "question": {
-        "text": "to write"
-      },
-      "answer": {
-        "text": "pisać"
-      }
-    },
-    {
-      "id": "9",
-      "question": {
-        "text": "book"
-      },
-      "answer": {
-        "text": "książka"
-      }
-    },
-    {
-      "id": "10",
-      "question": {
-        "text": "to sleep"
-      },
-      "answer": {
-        "text": "spać"
-      }
+      "deckId": "2",
+      "question": { "text": "sun" },
+      "answer": { "text": "słońce" }
     }
+  ],
+  "decks": [
+    { "id": "1", "name": "Basics" },
+    { "id": "2", "name": "Technology" }
   ],
   "translations": [
     {
       "id": "en",
       "hello": "Hello",
       "loading": "Loading...",
+      "pages": {
+        "home": "Home",
+        "deckManage": "Manage Deck",
+        "deck": "Deck",
+        "settings": "Settings"
+      },
       "flashcard": {
         "next": "Next",
         "previous": "Previous",
@@ -108,6 +52,12 @@
       "id": "pl",
       "hello": "Cześć",
       "loading": "Ładowanie...",
+      "pages": {
+        "home": "Główna",
+        "deckManage": "Zarządzaj talią",
+        "deck": "Talia",
+        "settings": "Ustawienia"
+      },
       "flashcard": {
         "next": "Następny",
         "previous": "Poprzedni",
