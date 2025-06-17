@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="deck in decks" :key="deck.id">
+    <li v-for="deck in deckStore.decks" :key="deck.id">
       {{ deck.name }}
       <Button variant="primary" @btn-click="goToDeck(deck.id)">Otwórz</Button>
     </li>
@@ -8,18 +8,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import axios from 'axios';
+import { useDeckStore } from '@/stores/deck';
 import { Button } from '@/components';
-import type { DeckType } from '@/types';
 
-const decks = ref<DeckType[]>([]);
 const router = useRouter();
+const deckStore = useDeckStore();
 
-onMounted(async () => {
-  const res = await axios.get(`${import.meta.env.VITE_API_URL}/decks`);
-  decks.value = res.data;
+onMounted(() => {
+  deckStore.fetchDecks();
 });
 
 const goToDeck = (id: string) => {
