@@ -1,9 +1,8 @@
 <template>
   <Navbar />
-  <DeckView />
+  <router-view />
 </template>
 
 <script setup lang="ts">
 import { Navbar } from '@/components';
-import { DeckView } from '@/views';
 </script>
