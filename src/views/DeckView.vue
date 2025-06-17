@@ -12,10 +12,13 @@
 import { onMounted } from 'vue';
 import { useFlashcardsStore } from '@/stores';
 import { FlashcardViewer } from '@/components';
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
+const deckId = route.params.id as string;
 const flashcardsStore = useFlashcardsStore();
 
 onMounted(() => {
-  flashcardsStore.fetchFlashcards('1');
+  flashcardsStore.fetchFlashcards(deckId);
 });
 </script>

@@ -4,7 +4,7 @@
       <ProgressBar class="flex-grow" :progress="progress" />
       <ErrorCount :errors="errors" />
     </div>
-    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center gap-2">
       <div class="flex gap-2">
         <input
           id="answer"
@@ -13,7 +13,10 @@
           class="border bg-white border-gray-300 rounded px-4"
           :placeholder="$t('flashcard.answerPlaceholder')"
         />
-        <Button variant="primary" ref="InputRef" @btn-click="checkAnswer"
+        <Button
+          :variant="checkButtonVariant"
+          ref="InputRef"
+          @btn-click="checkAnswer"
           >Check ✔️</Button
         >
       </div>
@@ -35,7 +38,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { useFlashcardsStore } from '@/stores';
 import { Button, ErrorCount, FlashcardViewer, ProgressBar } from '@/components';
 
@@ -60,6 +63,12 @@ const checkAnswer = () => {
     errors.value++;
   }
 };
+
+const checkButtonVariant = computed(() => {
+  return flashcardsStore.isLoading || answer.value.trim() === ''
+    ? 'disabled'
+    : 'primary';
+});
 
 onMounted(() => {
   flashcardsStore.fetchFlashcards('1');
