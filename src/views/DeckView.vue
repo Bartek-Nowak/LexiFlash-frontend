@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between w-full">
+  <div class="flex items-center justify-between w-full pt-11">
     <Button :variant="previousButtonVariant" @btn-click="previousFlashcard">{{
       $t('flashcard.previous')
     }}</Button>
