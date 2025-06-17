@@ -1,5 +1,13 @@
 export interface FlashcardType {
-  id: number;
-  front: string;
-  back: string;
+  id: string;
+  question: {
+    text?: string;
+    imageUrl?: string;
+    mathLatex?: string;
+  };
+  answer: {
+    text?: string;
+    imageUrl?: string;
+    mathLatex?: string;
+  };
 }
