@@ -4,7 +4,13 @@
     <div class="bg-slate-600 p-1 w-1/4 divide-y">
       <slot name="sidebar">
         <Greeting />
-        <DecksList shape="classic" show-header class="text-white" />
+        <ItemList
+          shape="classic"
+          :header="$t('yourCategories')"
+          :items="flashcardStore.categories"
+          class="text-white"
+          @item-selected="(item) => flashcardStore.setCurrentCategory(item)"
+        />
       </slot>
     </div>
     <!-- Main Content -->
@@ -17,5 +23,13 @@
 </template>
 
 <script setup lang="ts">
-import { Greeting, DecksList } from '@/components';
+import { onMounted } from 'vue';
+import { useFlashcardStore } from '@/stores';
+import { Greeting, ItemList } from '@/components';
+
+const flashcardStore = useFlashcardStore();
+
+onMounted(async () => {
+  await flashcardStore.fetchCategories();
+});
 </script>
