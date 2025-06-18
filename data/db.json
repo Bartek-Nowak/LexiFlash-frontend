@@ -43,6 +43,7 @@
       "introduction": "Learn faster with flashcards",
       "loading": "Loading...",
       "startLearning": "Start learning",
+      "yourDecks": "Your decks",
       "pages": {
         "home": "Home",
         "deckManage": "Manage Deck",
@@ -67,6 +68,7 @@
       "startLearning": "Rozpocznij naukę",
       "introduction": "Ucz się szybciej dzięki fiszkom",
       "greeting": "Witamy w",
+      "yourDecks": "Twoje fiszki",
       "pages": {
         "home": "Główna",
         "deckManage": "Zarządzaj fiszkami",
