@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center text-5xl font-bold text-white bg-gray-800 rounded-xl px-6 py-4 shadow-lg"
+    class="flex items-center justify-center text-5xl font-bold text-white bg-gray-800 rounded-xl px-6 py-4 shadow-lg select-none"
   >
     <span>{{ formattedTime }}</span>
   </div>
