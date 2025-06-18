@@ -9,3 +9,4 @@ export { default as FlashcardViewer } from './FlashcardViewer.vue';
 export { default as Greeting } from './Greeting.vue';
 export { default as ItemList } from './ItemList.vue';
 export { default as PackCard } from './PackCard.vue';
+export { default as Timer } from './Timer.vue';
