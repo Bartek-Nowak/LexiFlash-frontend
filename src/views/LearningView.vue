@@ -39,12 +39,12 @@
 </template>
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
-import { useFlashcardsStore } from '@/stores';
+import { useFlashcardStore } from '@/stores';
 import { Button, ErrorCount, FlashcardViewer, ProgressBar } from '@/components';
 
 const errors = ref(0);
 const progress = ref(0);
-const flashcardsStore = useFlashcardsStore();
+const flashcardsStore = useFlashcardStore();
 const flashcardIndex = ref(0);
 const answer = ref('');
 
