@@ -21,33 +21,30 @@ interface DecksType {
 
 export const useFlashcardStore = defineStore('flashcard', () => {
   const categories = ref<CategoryType[]>([]);
-  const decks = ref<DecksType>({});
-  const flashcards = ref<FlashcardType[]>([]);
+  const decks = ref<DeckType[]>([]);
   const page = ref(1);
-  const limit = 5;
+  const limit = 15;
   const isLoading = ref(false);
   const flashcardIndex = ref(0);
   const isNextPageAvailable = ref(true);
   const currentCategory = ref<CategoryType>();
+  const currentDeck = ref<DeckType>();
+  const flashcards = ref<FlashcardType[]>([]);
 
-  const fetchFlashcards = async (deck: DeckType) => {
-    if (!isNextPageAvailable.value) {
-      isLoading.value = false;
-      return;
-    }
+  const fetchFlashcards = async () => {
     try {
       isLoading.value = true;
 
       const apiUrl = import.meta.env.VITE_API_URL;
       const response = await axios.get(
-        `${apiUrl}/flashcards?deckId=${deck.id}&_page=${page.value}&_per_page=${limit}`
+        `${apiUrl}/flashcards?deckId=${currentDeck.value?.id}&_page=${page.value}&_per_page=${limit}`
       );
 
       if (!response.data.next) {
         isNextPageAvailable.value = false;
       }
 
-      flashcards.value = [...flashcards.value, ...response.data.data];
+      flashcards.value = response.data.data;
     } catch (error) {
       console.error('Error flashcards: ', error);
     } finally {
@@ -56,36 +53,42 @@ export const useFlashcardStore = defineStore('flashcard', () => {
   };
 
   const fetchCategories = async () => {
-    if (categories.value.length === 0) {
-      isLoading.value = true;
-      try {
-        const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/categories`
-        );
-        categories.value = res.data;
-        currentCategory.value = categories.value[0];
-      } finally {
-        isLoading.value = false;
-      }
+    if (categories.value.length !== 0) return;
+    isLoading.value = true;
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/categories`);
+      categories.value = res.data;
+      currentCategory.value = categories.value[0];
+    } finally {
+      isLoading.value = false;
     }
   };
 
-  const fetchDeck = async (category: CategoryType) => {
+  const fetchDeck = async () => {
+    if (categories.value.length === 0) {
+      await fetchCategories();
+    }
     isLoading.value = true;
     try {
+      if (!currentCategory.value) {
+        throw new Error('Current category is undefined');
+      }
       const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/decks?categoryId=${category.id}`
+        `${import.meta.env.VITE_API_URL}/decks?categoryId=${currentCategory.value.id}`
       );
-      decks.value[category.name] = res.data;
-      console.log('Fetched decks:', decks.value);
+      decks.value = res.data;
+      currentDeck.value = decks.value[0];
     } finally {
       isLoading.value = false;
     }
   };
 
   const setCurrentCategory = (category: CategoryType) => {
-    console.log('Setting current category:', category);
     return (currentCategory.value = category);
+  };
+
+  const setCurrentDeck = (deck: DeckType) => {
+    return (currentDeck.value = deck);
   };
 
   return {
@@ -100,5 +103,7 @@ export const useFlashcardStore = defineStore('flashcard', () => {
     fetchCategories,
     decks,
     fetchDeck,
+    setCurrentDeck,
+    currentDeck,
   };
 });
