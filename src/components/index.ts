@@ -6,3 +6,6 @@ export { default as PieChart } from './PieChart.vue';
 export { default as ProgressBar } from './ProgressBar.vue';
 export { default as ErrorCount } from './ErrorCount.vue';
 export { default as FlashcardViewer } from './FlashcardViewer.vue';
+export { default as Greeting } from './Greeting.vue';
+export { default as DecksList } from './DecksList.vue';
+export { default as PackCard } from './PackCard.vue';
