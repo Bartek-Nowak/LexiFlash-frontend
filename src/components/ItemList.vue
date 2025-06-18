@@ -1,7 +1,15 @@
 <template>
   <div :class="[containerClass]">
-    <h2 v-if="header" :class="headerClass">
+    <h2
+      v-if="header"
+      class="flex justify-between items-center"
+      :class="headerClass"
+    >
       {{ header }}
+      <i
+        class="fa-solid fa-plus text-white self-end p-2 cursor-pointer"
+        @click="$emit('icon-clicked')"
+      ></i>
     </h2>
 
     <ul :class="listClass">
