@@ -6,7 +6,6 @@
       show-butoons
       show-stats
     />
-
     <ItemList
       v-if="flashcardStore?.decks?.length"
       shape="bordered"
