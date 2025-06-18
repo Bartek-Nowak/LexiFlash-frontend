@@ -2,8 +2,8 @@
   <div class="flex min-h-screen">
     <!-- Sidebar -->
     <div class="bg-slate-600 p-1 w-1/4 divide-y">
+      <Greeting />
       <slot name="sidebar">
-        <Greeting />
         <ItemList
           shape="classic"
           :header="$t('yourCategories')"
