@@ -5,14 +5,12 @@ import {
   DeckManage,
   DeckView,
   SettingsView,
-  DeckList,
   LearningView,
 } from '@/views';
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
   { path: '/learning', name: 'learning', component: LearningView },
-  { path: '/deck-list', name: 'deck-list', component: DeckList },
   { path: '/deck-manage', name: 'deck-manage', component: DeckManage },
   { path: '/deck/:id', name: 'deck', component: DeckView, props: true },
   { path: '/settings', name: 'settings', component: SettingsView },
