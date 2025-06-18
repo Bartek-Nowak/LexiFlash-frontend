@@ -6,12 +6,14 @@
           {{ header }}
         </h2>
         <p v-if="description" class="text-gray-600">{{ description }}</p>
-        <p class="text-gray-600">Cards Studied: asdf asdf / asdf afsdf asd f</p>
-        <div class="flex gap-2">
+        <p v-if="showStats" class="text-gray-600">
+          Cards Studied: asdf asdf / asdf afsdf asd f
+        </p>
+        <div v-if="showButoons" class="flex gap-2">
           <Button
             theme="primary"
             shape="rounded"
-            @click="() => console.log('Start clicked')"
+            @click="() => router.push('/learning')"
             >Start Studying</Button
           >
           <Button
@@ -26,10 +28,15 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
 import { Button } from '@/components';
+
+const router = useRouter();
 
 defineProps<{
   header?: string;
   description?: string;
+  showButoons?: boolean;
+  showStats?: boolean;
 }>();
 </script>
