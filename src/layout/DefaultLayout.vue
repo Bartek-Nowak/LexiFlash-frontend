@@ -1,7 +1,8 @@
 <template>
   <div class="flex min-h-screen">
     <!-- Sidebar -->
-    <div class="bg-slate-600 p-1 w-1/4 divide-y flex flex-col">
+    <div class="bg-slate-600 p-1 w-1/4 flex flex-col">
+      <i class="fa-solid fa-gear fa-2x text-white self-end p-2"></i>
       <Greeting />
       <slot name="sidebar">
         <ItemList
@@ -10,6 +11,7 @@
           :items="flashcardStore.categories"
           class="text-white"
           @item-selected="(item) => flashcardStore.setCurrentCategory(item)"
+          @icon-clicked="() => console.log('Add category clicked')"
         />
       </slot>
     </div>
