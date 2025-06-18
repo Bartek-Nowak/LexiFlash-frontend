@@ -51,7 +51,7 @@ const isDisabled = computed(() => {
 });
 
 const baseClasses =
-  'font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer';
+  'font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer min-w-[100px]';
 
 const colorClasses = computed(() => {
   switch (props.theme) {
