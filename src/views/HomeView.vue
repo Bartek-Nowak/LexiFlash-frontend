@@ -3,6 +3,8 @@
     <PackCard
       :header="flashcardStore.currentCategory?.name"
       :description="flashcardStore.currentCategory?.description"
+      show-butoons
+      show-stats
     />
 
     <ItemList
