@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen">
     <!-- Sidebar -->
-    <div class="bg-slate-600 p-1 w-1/4 divide-y">
+    <div class="bg-slate-600 p-1 w-1/4 divide-y flex flex-col">
       <Greeting />
       <slot name="sidebar">
         <ItemList
