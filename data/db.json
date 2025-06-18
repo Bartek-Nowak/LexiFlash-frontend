@@ -20,19 +20,19 @@
     },
     {
       "id": "3",
-      "deckId": "2",
+      "deckId": "1",
       "question": { "text": "computer" },
       "answer": { "text": "komputer" }
     },
     {
       "id": "4",
-      "deckId": "2",
+      "deckId": "1",
       "question": { "text": "sun" },
       "answer": { "text": "słońce" }
     },
     {
       "id": "5",
-      "deckId": "3",
+      "deckId": "1",
       "question": { "text": "tree" },
       "answer": { "text": "drzewo" }
     },
@@ -44,25 +44,25 @@
     },
     {
       "id": "7",
-      "deckId": "4",
+      "deckId": "6",
       "question": { "text": "bread" },
       "answer": { "text": "chleb" }
     },
     {
       "id": "8",
-      "deckId": "4",
+      "deckId": "6",
       "question": { "text": "milk" },
       "answer": { "text": "mleko" }
     },
     {
       "id": "9",
-      "deckId": "5",
+      "deckId": "6",
       "question": { "text": "car" },
       "answer": { "text": "samochód" }
     },
     {
       "id": "10",
-      "deckId": "5",
+      "deckId": "6",
       "question": { "text": "city" },
       "answer": { "text": "miasto" }
     }
