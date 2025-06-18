@@ -29,11 +29,112 @@
       "deckId": "2",
       "question": { "text": "sun" },
       "answer": { "text": "słońce" }
+    },
+    {
+      "id": "5",
+      "deckId": "3",
+      "question": { "text": "tree" },
+      "answer": { "text": "drzewo" }
+    },
+    {
+      "id": "6",
+      "deckId": "3",
+      "question": { "text": "water" },
+      "answer": { "text": "woda" }
+    },
+    {
+      "id": "7",
+      "deckId": "4",
+      "question": { "text": "bread" },
+      "answer": { "text": "chleb" }
+    },
+    {
+      "id": "8",
+      "deckId": "4",
+      "question": { "text": "milk" },
+      "answer": { "text": "mleko" }
+    },
+    {
+      "id": "9",
+      "deckId": "5",
+      "question": { "text": "car" },
+      "answer": { "text": "samochód" }
+    },
+    {
+      "id": "10",
+      "deckId": "5",
+      "question": { "text": "city" },
+      "answer": { "text": "miasto" }
     }
   ],
+  "categories": [
+    { "id": "1", "name": "Basics", "description": "Basic vocabulary" },
+    { "id": "2", "name": "Technology", "description": "Technology terms" },
+    { "id": "3", "name": "Nature", "description": "Nature and environment" },
+    { "id": "4", "name": "Food", "description": "Food and drinks" },
+    { "id": "5", "name": "Travel", "description": "Travel and places" }
+  ],
   "decks": [
-    { "id": "1", "name": "Basics" },
-    { "id": "2", "name": "Technology" }
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "MyDeck1",
+      "description": "Basic vocabulary"
+    },
+    {
+      "id": "2",
+      "categoryId": "2",
+      "name": "MyDeck2",
+      "description": "Technology terms"
+    },
+    {
+      "id": "3",
+      "categoryId": "3",
+      "name": "MyDeck3",
+      "description": "Nature and environment"
+    },
+    {
+      "id": "4",
+      "categoryId": "4",
+      "name": "MyDeck4",
+      "description": "Food and drinks"
+    },
+    {
+      "id": "5",
+      "categoryId": "5",
+      "name": "MyDeck5",
+      "description": "Travel and places"
+    },
+    {
+      "id": "6",
+      "categoryId": "1",
+      "name": "MyDeck6",
+      "description": "Advanced vocabulary"
+    },
+    {
+      "id": "7",
+      "categoryId": "2",
+      "name": "MyDeck7",
+      "description": "Advanced technology terms"
+    },
+    {
+      "id": "8",
+      "categoryId": "3",
+      "name": "MyDeck8",
+      "description": "Advanced nature and environment"
+    },
+    {
+      "id": "9",
+      "categoryId": "4",
+      "name": "MyDeck9",
+      "description": "Advanced food and drinks"
+    },
+    {
+      "id": "10",
+      "categoryId": "5",
+      "name": "MyDeck10",
+      "description": "Advanced travel and places"
+    }
   ],
   "translations": [
     {
@@ -44,6 +145,7 @@
       "loading": "Loading...",
       "startLearning": "Start learning",
       "yourDecks": "Your decks",
+      "yourCategories": "Your categories",
       "pages": {
         "home": "Home",
         "deckManage": "Manage Deck",
@@ -69,6 +171,7 @@
       "introduction": "Ucz się szybciej dzięki fiszkom",
       "greeting": "Witamy w",
       "yourDecks": "Twoje fiszki",
+      "yourCategories": "Twoje kategorie",
       "pages": {
         "home": "Główna",
         "deckManage": "Zarządzaj fiszkami",
